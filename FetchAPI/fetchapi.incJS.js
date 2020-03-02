@@ -12,31 +12,44 @@ function displayUsers() {
         type: 'POST',
         dataType: 'json',
         success: function (apiData) {
-            //Test slet når programmet er færdigt
-            //console.log(apiData);
-            //$("#hfpro").append("<div class=\"img-container\"><p>MCLovin</p></div>");
-            //Stadig test skal 
             
-             console.log(apiData);
-
+            console.log(apiData);
 
             var i;
             var j;
-
-            for (i = 0; i < 260; i++) {
-                //alert([i]);
-                if (apiData.result[i].student_presence_id == 4 && apiData.result[i].education_id == 1) {
-
-                    $("#hfpro").append("<div class=\"img-container\"><p>"+ apiData.result[i].student_id +"</p></div>");
-                }
+            
+            
+            //Programmør kode.
+            for (i = 0; i < 270; i++) {
+                if (apiData.result[i].student_presence_id == 4 && apiData.result[i].education_id == 1 && apiData.result[i].progress_id == 1 ) {
+                    $("#hfpro1").append("<div class=\"img-container\"><p>"+ apiData.result[i].student_id +"</p></div>");
+                }else if (apiData.result[i].student_presence_id == 4 && apiData.result[i].education_id == 1 && apiData.result[i].progress_id == 2 ) {
+                    $("#hfpro2").append("<div class=\"img-container\"><p>"+ apiData.result[i].student_id +"</p></div>");
+                }else if (apiData.result[i].student_presence_id == 4 && apiData.result[i].education_id == 1 && apiData.result[i].progress_id == 3 ) {
+                    $("#hfpro3").append("<div class=\"img-container\"><p>"+ apiData.result[i].student_id +"</p></div>");
+                }else if (apiData.result[i].student_presence_id == 4 && apiData.result[i].education_id == 1 && apiData.result[i].progress_id == 4 ) {
+                    $("#hfpro4").append("<div class=\"img-container\"><p>"+ apiData.result[i].student_id +"</p></div>");
+                }else if (apiData.result[i].student_presence_id == 4 && apiData.result[i].education_id == 1 && apiData.result[i].progress_id == 5 ) {
+                    $("#hfpro5").append("<div class=\"img-container\"><p>"+ apiData.result[i].student_id +"</p></div>");
+                }                  
+                
             }
             
             
+            
+            //IT-Supporter kode.
             for (j = 0; j < 400; j++) {
                 //alert([i]);
-                if (apiData.result[j].student_presence_id == 4 && apiData.result[j].education_id == 2) {
-
-                    $("#hfit").append("<div class=\"img-container\"><p>"+ apiData.result[j].student_id +"</p></div>");
+                if (apiData.result[j].student_presence_id == 4 && apiData.result[j].education_id == 2 && apiData.result[j].progress_id == 1) {
+                    $("#hfit1").append("<div class=\"img-container\"><p>"+ apiData.result[j].student_id +"</p></div>");
+                }else if (apiData.result[j].student_presence_id == 4 && apiData.result[j].education_id == 2 && apiData.result[j].progress_id == 2 ) {
+                    $("#hfit2").append("<div class=\"img-container\"><p>"+ apiData.result[j].student_id +"</p></div>");
+                }else if (apiData.result[j].student_presence_id == 4 && apiData.result[j].education_id == 2 && apiData.result[j].progress_id == 3 ) {
+                    $("#hfit3").append("<div class=\"img-container\"><p>"+ apiData.result[i].student_id +"</p></div>");
+                }else if (apiData.result[j].student_presence_id == 4 && apiData.result[j].education_id == 2 && apiData.result[j].progress_id == 4 ) {
+                    $("#hfit4").append("<div class=\"img-container\"><p>"+ apiData.result[i].student_id +"</p></div>");
+                }else if (apiData.result[j].student_presence_id == 4 && apiData.result[j].education_id == 2 && apiData.result[j].progress_id == 5 ) {
+                    $("#hfit5").append("<div class=\"img-container\"><p>"+ apiData.result[i].student_id +"</p></div>");
                 }
             }
             

@@ -5,13 +5,13 @@ body{
 
 .img-container{
     float: left;
-    height: 60px;
-    width: 60px;
+    height: 33px;
+    width: 33px;
     margin-bottom: 2px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 100%;
     margin-left: 2px;
-    line-height: 25px;
+    line-height: 2px;
 }
 
 
@@ -20,6 +20,30 @@ body{
     float: left;
     border: outset;
     width: 500px;
-    height: 700px;
+    height: 713px;
     margin-left: 200px;
 }
+
+
+#hfpro1_,#hfpro2_,#hfpro3_,#hfpro4_,#hfpro5_{
+    height: 124px;
+    width: 500px;
+    /*background-color: gray;*/
+    border-top: 1px solid black;
+
+}
+
+#hfit2_,#hfit3_,#hfit4_,#hfit5_{
+    height: 124px;
+    width: 500px;
+    /*background-color: gray;*/
+    border-top: 1px solid black;
+}
+
+#hfit1_{
+    height: 156px;
+    width: 500px;
+    /*background-color: gray;*/
+    border-top: 1px solid black;
+}
+
